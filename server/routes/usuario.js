@@ -36,7 +36,7 @@ app.get('/usuario', verificaToken, (req, res) => {
 
 });
 
-app.post('/usuario', [verificaToken], (req, res) => {
+app.post('/usuario', (req, res) => {
     let body = req.body;
 
     let usuario = new Usuario({
